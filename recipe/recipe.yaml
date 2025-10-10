@@ -1,5 +1,5 @@
 context:
-  version: "1.8.2"
+  version: "1.9.0"
 
 package:
   name: simplejpeg
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/s/simplejpeg/simplejpeg-${{ version }}.tar.gz
-  sha256: b06e253a896c7fc4f257e11baf96d783817cea41360d0962a70c2743ba57bc30
+  sha256: 5ac7d9489eeb812c2e7ea5c283994a29d9fefdfe5ed7b86c09d485e0dd366689
 
 build:
   script:
@@ -19,7 +19,7 @@ build:
       then: |
         copy %RECIPE_DIR%\setup.py .
         python -m pip install . -vv
-  number: 2
+  number: 0
 
 requirements:
   build:
